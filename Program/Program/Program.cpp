@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <clocale>
-#include <chrono>
 using namespace std;
 
 //В данной программе решение 3-ех задач вызывается через отдельные функции из main()
@@ -9,9 +8,6 @@ using namespace std;
 
 //Рекурсивная функция для вычисления суммы последовательности
 double rec_exp(int n, long double x, int i) {
-	//Проверка является ли текущий элемент последним
-	//Если нет, возврат суммы текущего элемента и результата рекурс. функ. с индексом на 1 больше
-	//Если да, возврат последнего элемента 
 	if (i < n) { 
 		return ((double)pow((-1), i) * pow((1 + x), 2 * i) / i) + rec_exp(n, x, i + 1);
 	}
@@ -23,7 +19,6 @@ double rec_exp(int n, long double x, int i) {
 //Основная функция для вычисления суммы последовательности
 void funk_expression() {
 	long double x, s = 0;
-	//clock_t mem_time_1, mem_time_2, get_time;
 	int n;
 
 	cout << "Введите количество итераций выражения: ";
@@ -33,28 +28,19 @@ void funk_expression() {
 	cin >> x;
 
 	//Вычисление через цикл
-	//auto begin = std::chrono::steady_clock::now();
 	for (int i = 1; i <= n; ++i) {
 		s += (double)(pow((-1), i) * pow((1 + x), 2 * i)) / i;
 	}
-	//auto end = std::chrono::steady_clock::now();
-	//auto mem_time_1 = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
 
 	cout << "Ответ, полученный в цикле: " << s << endl;
 
 	//Вычисление через рекурсию
-	//begin = std::chrono::steady_clock::now();
 	s = rec_exp(n, x, 1);
-	//end = std::chrono::steady_clock::now();
-	//auto mem_time_2 = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
 
 	cout << "Ответ, полученный в рекурсии: " << s << endl;
 
-
-	//cout << "Время работы цикла: " << mem_time_1.count() << endl;
-	//cout << "Время работы рекурсии: " << mem_time_2.count() << endl;
-	//cout << "Разница времени: " << mem_time_1.count() - mem_time_2.count() << endl;
 }
+
 //Рекурсивная функция для нахождения ряда Фибоначчи
 int rec_fib(int n) {
 	if (n == 1) return 1;
@@ -66,14 +52,14 @@ int rec_fib(int n) {
 void funk_fibonachi(int n) {
 	cout << "Ряд Фибоначи до указанного элемента:" << endl;
 	for (int i = 1; i <= n; ++i) {
-		cout << rec_fib(i);
+		cout << rec_fib(i) << " ";
 	}
 }
 
 //Рекурсивная функция для решения "Ханойской башни"
 void rec_han(int i, int start, int end, int temp) {
 	if (i > 1) {
-		cout << "Диск " << i << ": заблокирован, переход к следующему кольцу" << endl;
+		cout << "Диск " << i << ": заблокирован, переход к следующему диску" << endl;
 	}
 	if (i > 0) {
 		rec_han(i - 1, start, temp, end);
@@ -104,7 +90,7 @@ int main() {
 		funk_fibonachi(n);
 		break;
 	case 3:
-		cout << "Введите количество колец: ";
+		cout << "Введите количество дисков: ";
 		cin >> n;
 		funk_hanoy(n);
 		break;

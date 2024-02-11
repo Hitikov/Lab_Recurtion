@@ -1,0 +1,45 @@
+<mxfile host="Electron" modified="2024-02-11T19:42:04.373Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="6tedhza-eO4Ccwq2Pj0O" version="23.0.2" type="device">
+  <diagram name="Страница — 1" id="43D146Kne1S4HCMrkk_K">
+    <mxGraphModel dx="1049" dy="1856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CnICaGXTGDfWqXtrc4o_-1" target="CnICaGXTGDfWqXtrc4o_-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-1" value="void funk_hanoy(int n)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CnICaGXTGDfWqXtrc4o_-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-3" value="cout &amp;lt;&amp;lt; &quot;Вариант перемещения дисков: &quot; &amp;lt;&amp;lt; endl;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.06818181818181818;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.005;exitY=0.337;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CnICaGXTGDfWqXtrc4o_-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-5" value="&lt;div&gt;void rec_han(int i, int start, int end, int temp) {&lt;/div&gt;&lt;div&gt;if (i &amp;gt; 1) {&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;cout &amp;lt;&amp;lt; &quot;Диск &quot; &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &quot;: заблокирован, переход к следующему диску&quot; &amp;lt;&amp;lt; endl;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;if (i &amp;gt; 0) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;rec_han(i - 1, start, temp, end);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;cout &amp;lt;&amp;lt; &quot;Диск &quot; &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &quot;: cо стержня &quot; &amp;lt;&amp;lt; start &amp;lt;&amp;lt; &quot; на стержень &quot; &amp;lt;&amp;lt; end &amp;lt;&amp;lt; endl;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;rec_han(i - 1, temp, end, start);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;size=0.03225806451612903;" vertex="1" parent="1">
+          <mxGeometry x="280" y="60" width="520" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CnICaGXTGDfWqXtrc4o_-7" target="CnICaGXTGDfWqXtrc4o_-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.33333333333337" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-7" value="rec_han(n, 1, 2, 3);" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.16666666666666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CnICaGXTGDfWqXtrc4o_-9" value="}" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130.01" y="320" width="59.99" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
