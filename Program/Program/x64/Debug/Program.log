@@ -1,0 +1,4 @@
+﻿  Program.cpp
+C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(16,3): error C3861: funk_expression: идентификатор не найден
+C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(21,3): error C3861: funk_fibonachi: идентификатор не найден
+C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(26,3): error C3861: funk_hanoy: идентификатор не найден
