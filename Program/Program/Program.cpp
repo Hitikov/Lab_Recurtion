@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <clocale>
+#include <time.h>
 using namespace std;
 
 //В данной программе решение 3-ех задач вызывается через отдельные функции из main()
@@ -27,18 +28,23 @@ void funk_expression() {
 	cout << "Введите переменную: ";
 	cin >> x;
 
+	auto start_time_1 = clock();
 	//Вычисление через цикл
 	for (int i = 1; i <= n; ++i) {
-		s += (double)(pow((-1), i) * pow((1 + x), 2 * i)) / i;
+		s += (long double)(pow((-1), i) * pow((1 + x), 2 * i)) / i;
 	}
+	auto end_time_1 = clock();
 
 	cout << "Ответ, полученный в цикле: " << s << endl;
 
+	auto start_time_2 = clock();
 	//Вычисление через рекурсию
 	s = rec_exp(n, x, 1);
+	auto end_time_2 = clock();
 
 	cout << "Ответ, полученный в рекурсии: " << s << endl;
-
+	cout << "Время работы цикла: " << (end_time_1 - start_time_1) << endl;
+	cout << "Время работы цикла: " << (end_time_2 - start_time_2) << endl;
 }
 
 //Рекурсивная функция для нахождения ряда Фибоначчи
@@ -78,7 +84,9 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int nav, n;
 
-	cout << "Выберете задачу: \n1. Решение рекурсивного выражения \n2. Числа Фибоначи \n3. Ханойская башня \nВведите номер:";
+	
+
+	cout << "Выберете задачу: \n1. Решение рекурсивного выражения \n2. Числа Фибоначи \n3. Ханойская башня \nВведите номер: ";
 	cin >> nav;
 	switch (nav) {
 	case 1:
@@ -97,6 +105,8 @@ int main() {
 	default:
 		break;
 	}
+
+	
 
 	return 0;
 }

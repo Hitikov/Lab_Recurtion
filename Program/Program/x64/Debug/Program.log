@@ -1,4 +1,4 @@
 ﻿  Program.cpp
-C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(21): warning C4715: rec_exp: значение возвращается не при всех путях выполнения
-C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(63): warning C4715: rec_fib: значение возвращается не при всех путях выполнения
+C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(18): warning C4715: rec_exp: значение возвращается не при всех путях выполнения
+C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\Program\Program.cpp(55): warning C4715: rec_fib: значение возвращается не при всех путях выполнения
   Program.vcxproj -> C:\Cstm\PSTU_works\Inf\Labs\Lab_Recurtion\Program\x64\Debug\Program.exe
